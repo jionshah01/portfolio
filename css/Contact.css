@@ -1,0 +1,94 @@
+#contact {
+  padding: 120px 0 0 0;
+}
+#contact h3 > span {
+  color: transparent;
+  -webkit-text-stroke: 1px var(--black-color);
+}
+#contact h3 {
+  font-size: 36px;
+  color: #000;
+  margin: auto;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+#contact .contact {
+  margin-top: 50px;
+  width: 100%;
+}
+#contact .contact_left .contact_info {
+  padding: 0 0 0 0;
+}
+#contact .contact_left .contact_info span{
+  display: block;
+  line-height: 6;
+}
+#contact .contact_info span {
+  font-size: 16px;
+}
+#contact .contact_info span i{
+  font-size: 30px;
+  color: var(--black-color);
+  margin-right: 10px;
+  vertical-align: middle;
+}
+#contact .contact_info span a{
+  color: var(--black-color);
+  font-size: 18px;
+}
+#contact .fa-mobile-button{
+  margin-left: 4px;
+}
+#contact .contact_form {
+  width: 100%;
+}
+#contact .contact_form form {
+  margin: 20px 0 0 70px;
+}
+#contact .contact_form input {
+  margin: 15px 0;
+  display: block;
+  outline: none;
+  padding: 10px 0;
+  background: none;
+  font-size: 18px;
+  width: 25rem;
+  border-width: 0 0 1px 0;
+  border-color: var(--black-color);
+}
+#contact .contact_form textarea {
+  margin: 45px 0;
+  outline: none;
+  background: none;
+  font-size: 18px;
+  width: 25rem;
+  border-width: 0 0 1px 0;
+  border-color: var(--black-color);
+}
+#contact .contact_form textarea {
+  outline: none;
+}
+@media (max-width: 991px) {
+  #contact .contact_left .contact_info span {
+    text-align: center;
+  }
+  #contact .contact_form {
+    height: 440px;
+    text-align: center;
+    margin: 0 0 0 10px;
+  }
+  #contact .contact_form form {
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+  }
+  #contact .contact_form input {
+    font-size: 16px;
+    width: 15rem;
+  }
+  #contact .contact_form textarea {
+    font-size: 16px;
+    width: 15rem;
+  }
+}

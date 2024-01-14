@@ -1,0 +1,95 @@
+#about {
+  min-height: 530px;
+  padding: 120px 0 0 0;
+}
+#about .about {
+  height: 450px;
+  width: 100%;
+}
+#about .about .about_text {
+  margin: 0 5px;
+  padding-top: 25px;
+}
+#about .about_text h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 36px;
+  color: var(--black-color);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+#about .about_text h3 > span {
+  color: transparent;
+  -webkit-text-stroke: 1px var(--black-color);
+}
+#about .about_text p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.6;
+  margin: 25px 0;
+}
+
+#about #about_pic {
+  height: 450px;
+  width: 100%;
+  text-align: center;
+}
+#about #about_pic .pic img {
+  width: 311px;
+}
+
+#about .skills {
+  height: 450px;
+  width: 100%;
+  /* background-color: violet; */
+}
+#about .skills .skill_item {
+  padding-top: 25px;
+}
+#about .skills .skill_item .skill_progress {
+  margin: 25px 0;
+}
+#about .skills h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 36px;
+  color: var(--black-color);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+#about #skill_section {
+  margin-bottom: 10px;
+}
+#about #skill_section .info {
+  display: flex;
+  justify-content: space-between;
+}
+#about #skill_section .info p {
+  color: var(--black-color);
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0px 0px 2px 0px;
+}
+#about #skill_section .progress {
+  width: 100%;
+  height: 18px;
+  border-radius: 0;
+  background-color: var(--ash-color);
+}
+#about #skill_section .progress .progress_bar {
+  width: 0;
+  opacity: 0;
+  background-color: var(--black-color);
+  border-radius: 0;
+  transition: all 0.5s;
+}
+@media (max-width: 991px) {
+  #about .ap {
+    display: none;
+  }
+}
+@media (max-width: 380px) {
+  #about .skills .skill_item {
+    padding-top: 95px;
+  }
+}

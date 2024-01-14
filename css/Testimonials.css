@@ -1,0 +1,107 @@
+#testimonials {
+    padding: 120px 0 0 0;
+}
+#testimonials h3{
+    margin: 0;
+    padding: 0;
+    font-size: 36px;
+    color: var(--black-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+#testimonials h3 > span{
+    color: transparent;
+  -webkit-text-stroke: 1px var(--black-color);
+}
+.testimonial{
+    overflow: hidden;
+}
+.testimonial .test-content .slide .img{
+    margin: 13px 0;
+}
+.testimonial .test-content .slide .client{
+    height: 200px;
+    width: 200px;
+    border-radius: 50% 0 50% 50%;
+}
+.testimonial .test_detail{
+    display: flex;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .2);
+    margin: 40px 50px;
+    padding: 40px 80px;
+}
+.testimonial .test_text {
+    margin: 0 90px;
+}
+.testimonial .test_text i{
+    font-size: 65px;
+    position: absolute;
+    color: var(--sky-color);
+    margin: -30px -30px;
+}
+.testimonial .test_text p{
+    font-size: 16px;
+    position: relative;
+}
+.testimonial .test_text .clientCountry img{
+    width: 26px;
+    margin-top: -4px;
+}
+.testimonial .test_text .clientCountry span{
+    font-size: 18px;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 2px;
+}
+.testimonial .nav-btn{
+    color: var(--sky-color);
+}
+.testimonial .nav-btn::before,
+.testimonial .nav-btn::after{
+    font-size: 28px;
+}
+.swiper-pagination-bullet{
+    height: 12px;
+    width: 12px;
+}
+.swiper-pagination-bullet-active{
+    height: 15px;
+    width: 15px;
+    background: var(--yellow-color);
+}
+@media (max-width: 991px){
+    .testimonial .test_detail {
+        margin: 40px 0px;
+        padding: 28px 20px;
+    }
+    .testimonial .test_text {
+    margin: 0 45px;
+    }
+    .testimonial .test_detail{
+        display: block;
+    }
+    .testimonial .test-content .slide .img{
+        text-align: center;
+    }
+    .testimonial .test_text {
+        margin: 35px 45px;
+        text-align: center;
+    }
+    .testimonial .test_text p {
+        padding-top: 30px;
+    }
+}
+@media (max-width: 575px){
+    .testimonial .test_detail {
+        padding: 20px 0px;
+    }
+    .testimonial .test_text {
+        margin: 0px 45px;
+    }
+    .testimonial .test_text i {
+        margin: -15px -30px;
+    }
+    .testimonial .test_text p {
+        padding-top: 45px;
+    }
+}

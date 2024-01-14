@@ -1,0 +1,90 @@
+#service {
+  background-image: url(../assets/image/Service_Bg2.png);
+  min-height: 585px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 120px 0 0 0;
+}
+.service h3 {
+  font-size: 36px;
+  color: var(--black-color);
+  margin: auto;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.service h3 > span{
+  color: transparent;
+  -webkit-text-stroke: 1px var(--black-color);
+}
+.service .service_all_box {
+  margin-top: 50px;
+}
+.service .box {
+  width: 333px;
+  height: 400px;
+  padding: 40px;
+  background: var(--white-color);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .12);
+  border-radius: 0px;
+  margin: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  margin: auto;
+}
+.service .box i {
+  width: 80px;
+  height: 80px;
+  color: var(--white-color);
+  background: var(--black-color);
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: 1s;
+  border: 2px solid var(--white-color);
+}
+.service .box:nth-child(1) i {
+  box-shadow: 0 0 0 0 var(--black-color);
+  background: var(--black-color);
+}
+.service .box:nth-child(1):hover i {
+  /* box-shadow: 0 0 0 400px var(--primary-color); */
+  box-shadow: 0 0 0 400px var(--black-color);
+}
+.service .box .content {
+  position: relative;
+  z-index: 1;
+  color: var(--black-color);
+  transition: 0.5s;
+}
+.service .box:hover .content {
+  color: var(--white-color);
+}
+.service .box h4 {
+  font-size: 22px;
+  margin: 20px 0 10px 0;
+  padding: 0;
+}
+.service .box p {
+  font-size: 16px;
+}
+@media (max-width: 1199px) {
+  .service .box {
+    width: 300px;
+  }
+  .service .box {
+    padding: 25px;
+  }
+}
+@media (max-width: 991px) {
+  #service {
+    min-height: 85rem;
+  }
+  .service .box {
+    margin-bottom: 35px;
+  }
+}

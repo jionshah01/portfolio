@@ -1,0 +1,150 @@
+#navbar {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 50px;
+  transition: 0.6s;
+  /* background-color: var(--white-color); */
+}
+/* From-JS */
+#navbar.sticky {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .12);
+  padding: 0px 50px;
+  background: var(--white-color);
+}
+#navbar.sticky .menu ul li a{
+  color: var(--black-color);
+}
+#navbar .Brand img{
+  width: 70px;
+}
+#navbar .menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#navbar .menu ul {
+  display: flex;
+  list-style-type: none;
+  margin-top: 15px;
+}
+#navbar .menu ul li a {
+  position: relative;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 20px;
+  color: var(--white-color);
+}
+/* #navbar .menu ul li a:after {
+  content: "";
+  position: absolute;
+  background-color: var(--yellow-color);
+  height: 3px;
+  width: 0%;
+  left: 0;
+  bottom: -6px;
+  transition: 0.3s;
+}
+#navbar .menu ul li a:hover:after {
+  width: 100%;
+}
+#navbar .menu ul li a.active:after {
+  width: 100%;
+} */
+#navbar .btn {
+  color: var(--white-color);
+  font-size: 25px;
+  cursor: pointer;
+  display: none;
+  border: none;
+}
+
+
+
+.active{
+  background: var(--sky-color);
+  padding: 2px;
+}
+
+
+
+
+
+@media (max-width: 991px) {
+  #navbar .Brand img {
+    width: 65px;
+  }
+  #navbar .btn {
+    display: block;
+  }
+  #navbar.sticky .btn{
+    color: var(--black-color);
+  }
+  #navbar .menu {
+    position: fixed;
+    background: var(--white-color);
+    flex-direction: column;
+    width: 35%;
+    height: 60vh;
+    top: 0;
+    right: -100%;
+    padding: 80px 50px;
+    transition: 0.5s;
+    transition-property: right;
+  }
+  #navbar .menu ul {
+    margin: 0;
+    padding: 30px 0 0 0;
+    display: inline;
+  }
+  #navbar .menu ul li {
+    text-align: center;
+  }
+  #navbar .menu.active {
+    right: 0;
+  }
+  #navbar .menu .close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 25px;
+    color: var(--black-color);
+  }
+  #navbar .menu ul li a {
+    color: var(--black-color);
+    display: block;
+    font-size: 20px;
+    margin: 15px;
+    padding: 0 10px;
+  }
+}
+@media (max-width: 575px) {
+  #navbar .Brand img {
+    width: 50px;
+  }
+  #navbar {
+    padding: 10px 20px;
+  }
+  #navbar.sticky {
+    padding: 5px 20px;
+  }
+  #navbar .Brand a {
+    font-size: 35px;
+  }
+  #navbar .menu ul li a {
+    font-size: 16px;
+    margin: 10px;
+    padding: 0px 10px;
+  }
+  #navbar .menu {
+    width: 40%;
+    height: 45vh;
+    padding: 55px 30px;
+  }
+}
